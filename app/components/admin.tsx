@@ -10,7 +10,7 @@ const Admin = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch("http://localhost:3001/User");
+      const response = await fetch("https://admin-app-1-se24.onrender.com/User");
 
       if (!response.ok) {
         throw new Error("Failed to fetch users");
