@@ -46,7 +46,7 @@ const View = () => {
       };
 
       const approvedRes = await fetch(
-        "http://localhost:3001/Approveds",
+        "https://admin-app-1-se24.onrender.com/Approveds",
         {
           method: "POST",
           headers: {
@@ -61,7 +61,7 @@ const View = () => {
       }
 
       const userRes = await fetch(
-        `http://localhost:3001/User/${view.id}`,
+        `https://admin-app-1-se24.onrender.com/User/${view.id}`,
         {
           method: "PATCH",
           headers: {
@@ -100,7 +100,7 @@ const View = () => {
       setLoading(true);
 
       const res = await fetch(
-        `http://localhost:3001/User/${id}`,
+        `https://admin-app-1-se24.onrender.com/User/${id}`,
         {
           method: "PATCH",
           headers: {
