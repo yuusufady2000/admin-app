@@ -15,7 +15,7 @@ const View = () => {
   const fetchDetail = async () => {
     try {
       const res = await fetch(
-        `http://localhost:3001/User/${id}`
+        `https://admin-app-1-se24.onrender.com/User/${id}`
       );
 
       if (!res.ok) {
